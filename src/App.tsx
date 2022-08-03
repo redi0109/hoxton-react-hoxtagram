@@ -14,7 +14,7 @@ function App() {
     getImagefromServer();
   }, []);
 
-  function cretePost(image, title: string) {
+  function createPost(image: any, title: string) {
     fetch("http://localhost:3010/images", {
       method: "POST",
       headers: {
@@ -29,6 +29,7 @@ function App() {
       .then((newPost) => {
         setImages([...images, newPost]);
       });
+  }
 
     return (
       <div className="App">
@@ -54,11 +55,11 @@ function App() {
             <form
               onSubmit={(event) => {
                 event.preventDefault();
-                cretePost(event.target.image.value, event.target.title.value);
+                createPost(event.target.image.value, event.target.title.value);
               }}
             >
               <input type="text" name="title" />
-              <input type="text" placeholder="Image URL" />
+              <input type="text" name="image" placeholder="Image URL" />
               <button type="submit">Post</button>
             </form>
           </article>
@@ -66,5 +67,6 @@ function App() {
       </div>
     );
   }
-}
+
+
 export default App;

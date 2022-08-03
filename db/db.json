@@ -11,6 +11,11 @@
       "title": "Coder cats",
       "likes": 5,
       "image": "./assets/coder-cat.jpeg"
+    },
+    {
+      "title": "redi",
+      "image": " https://imgs.search.brave.com/Il5neocKBkOoySisbwu7yCvrZA3W3QZTttA8fPlSzfU/rs:fit:691:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/bGFnLUYxSTlIbVdC/RWY2akdMdzVnSGFG/RiZwaWQ9QXBp",
+      "id": 3
     }
   ],
   "comments": [
